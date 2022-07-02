@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #5e544c;
+}
+
+.row{
+    background-color: #5e544c;
+}
+
+nav.navbar{
+    background-color: #C7B699;
+    width: 100%;
+    border-bottom: 3px solid #5e544c;
+}
+
+.nav-link{
+    font-family: 'Changa', sans-serif;
+    color: #5e544c;
+    font-size: 22px;
+    margin: 10px 0;
+    border-bottom: .1px inset #5e544c;
+    text-align: center;
+
+}
+
+.website_logo{
+    height: 50px;
+}
+
+.main_title{
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    color: #F6F3EC;
+    font-size: 22px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.fa-user{
+    color: #F6F3EC;
+    font-size: 18px;
+    display: none;
+}
+
+.fa-bars{
+    color: #5e544c;
+    font-size: 20px;
+}
+
+.fa-facebook, .fa-instagram, .fa-snapchat, .fa-whatsapp{
+    color: #F6F3EC;
+    font-size: 20px;
+    align-items: center;
+}
+
+.form-control{
+    background-color: #C7B699;
+    border: none;
+    border-bottom: 2px inset #5e544c;
+}
+
+/* .form-control:placeholder-shown{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0.9;
+} */
+
+/* need to hide display of placeholder text on click using jquery */
+
+.row-footer{
+    border-radius: 5px 5px 0 0;
+}
+
+.row_visit_us{
+    border-radius: 0 0 5px 5px;
+}
+
+.footer_head h3{
+    font-family: 'Exo', sans-serif;
+    color: #F6F3EC;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 7px;
+    padding-top: 3px;
+}
+
+.footer_icons, .location_icons{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 12px;
+    border-bottom: .1px inset #F6F3EC;
+}
+
+.fa-facebook, .fa-instagram, .fa-snapchat, .fa-whatsapp{
+    font-size: 22px;
+}
+
+.visit_us h3{
+    font-family: 'Exo', sans-serif;
+    color: #F6F3EC;
+    align-items: center;
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+
+.fa-location-dot{
+    color: #F6F3EC;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+.visit_us p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    color: #F6F3EC;
+    padding: 8px 0 15px 0;
+}
+
+.gender_class{
+    text-align: center;
+    width: 100%;
+    margin: 13px 0;
+}
+
+div.col-12.col_men, .col_women, .col_kids{
+    background-color: #C7B699;
+    padding: 18px 0;
+    border-bottom: 1px solid #5e544c;
+    border-radius: 3px;
+}
+
+.a_men, .a_women, .a_kids{
+    color: #5e544c;
+    font-size: 20px;
+    font-family: 'Changa', sans-serif;
+    cursor: pointer;
+}
+
+.a_men:hover, .a_women:hover, .a_kids:hover{
+    color: #F6F3EC;
+    text-decoration: none;
+    transition: .6s;
+}
+
+
+
+
+
+
+@media (min-width: 767px){
+
+    /* .slider-row{
+        height: 75vh;
+    } */
+
+    .gender_class{
+        display: inline-flex;
+        width: 30% ;
+    }
+
+    div.col-12.col_men, .col_women, .col_kids{
+        margin-left: 8%;
+    }
+
+}
+
+@media (min-width: 992px){
+
+    .main_title{
+        font-size: 24px;
+        margin-left: 30px;
+    }
+
+    .fa-user{
+        display: block;
+    }
+
+    .row-footer{
+        display: none;
+    }
+
+    .visit_us{
+        display: none;
+    }
+
+    nav.navbar{
+        width: 100%;
+        border-bottom: 1px inset #5e544c;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .input-group{
+        width: 40%;
+    }
+
+    .fa-user{
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    .fa-house, .fa-layer-group, .fa-star, .fa-gifts, .fa-circle-info{
+        font-size: 18px;
+        margin-top: 3px;
+        padding-right: 8px;
+    } 
+
+    a.nav-link{
+        font-size: 18px;
+        border-bottom: none;
+        display: inline-flex;
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+
+    li.nav-item{
+        padding: 0 40px;
+    }
+
+    ul.navbar-nav{
+        display: inline-flex;
+        margin-left: 40px;
+    }
+
+    a.nav-link:hover{
+        color: #F6F3EC;
+        transition: .6s;
+    }
+
+    a.nav-link.active_link{
+        border-bottom: 2px solid #5e544c;
+    }
+
+    a.nav-link.active_link:hover{
+        border-color: #F6F3EC;
+    }
+
+    .carousel-item{
+        border: 10px solid #C7B699;
+
+        /* border-bottom: none;
+        height: 70vh;
+        width: 80%;
+        margin-top: 13px;
+        margin-left: 10%;
+        padding: 10px; */
+    }
+
+}
