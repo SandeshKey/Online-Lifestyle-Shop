@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Description Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Exo:wght@800&family=Kanit&family=Poppins:wght@200;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bs-assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./form.html">
+</head>
+
+<body>
+
+    <!-- top logo section starts  -->
+    <div class="container-fluid" id="home">
+
+        <div class="row top_row" style="z-index: 2;">
+            <div class="col-1 py-1">
+                <img class="website_logo" src="../assets/Images/ols-logo2.png" alt="Website Logo">
+            </div>
+            <div class="col-10">
+                <h3 class="main_title mt-3">FOOT-JUNKIES</h3>
+            </div>
+            <div class="col-1 d-inline-flex">
+                <div class="user_icon py-3 mt-2 d-inline-flex">
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <!-- top logo section ends  -->
+
+        <!-- navbar section starts -->
+        <div class="row row-2">
+            <nav class="navbar navbar-expand-lg">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Search Here.." aria-label="Search" />
+                    <button type="button" class="btn">
+                        <i class="fa-solid fa-search search_icon"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active_item">
+                            <a href="./index.html" class="nav-link active_link">
+                                <i class="fa-solid fa-house"></i>
+                                HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link">
+                                <i class="fa-solid fa-layer-group"></i>
+                                TRENDING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link">
+                                <i class="fa-solid fa-star"></i>
+                                BRANDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link">
+                                <i class="fa-solid fa-gifts"></i>
+                                ACCESSORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link">
+                                <i class="fa-solid fa-circle-info"></i>
+                                ABOUT</a>
+                        </li>
+                    </ul>
+
+                    <div class="row row-footer mt-2 pt-2">
+                        <div class="col-12 footer_head">
+                            <h3>JOIN US ON :</h3>
+                        </div>
+                        <div class="col footer_icons">
+                            <div class="col-3">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="col-3">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="col-3">
+                                <i class="fa-brands fa-snapchat"></i>
+                            </div>
+                            <div class="col-3">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row_visit_us d-block pt-2">
+                        <div class="col visit_us text-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <b>
+                                <p>POKHARA, LAKESIDE</p>
+                            </b>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar section ends -->
+
+        <!-- page header starts -->
+        <div class="page-header-section page-header-bg">
+            <div class="container">
+                <div class="row page-header-row">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <div class="page-header-text">
+                            <p>WELCOME TO</p>
+                            <h1>CART PAGE</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page header ends -->
+
+
+        <!-- cart -->
+	<div class="cart-section>
+		<div class="container">
+			<div class="row cart-row">
+				<div class="col-lg-8 col-md-12">
+					<div class="cart-table-wrap">
+						<table class="cart-table">
+							<thead class="cart-table-head">
+								<tr class="table-head-row">
+									<th class="product-remove"></th>
+									<th class="product-name">Name</th>
+									<th class="product-price">Price</th>
+									<th class="product-quantity">Quantity</th>
+									<th class="product-total">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="table-body-row">
+									<td class="product-remove"><a href="#"><i class="red fa-solid fa-circle-minus"></i></a></td>
+									<td class="product-name">Clarks Women Sandals</td>
+									<td class="product-price">$85</td>
+									<td class="product-quantity"><input type="number" placeholder="0"></td>
+									<td class="product-total">1</td>
+								</tr>
+								<tr class="table-body-row">
+									<td class="product-remove"><a href="#"><i class="fa-solid fa-circle-minus"></i></a></td>
+									
+									<td class="product-name">Puma RS-X 2022</td>
+									<td class="product-price">$70</td>
+									<td class="product-quantity"><input type="number" placeholder="0"></td>
+									<td class="product-total">1</td>
+								</tr>
+								<tr class="table-body-row">
+									<td class="product-remove"><a href="#"><i class="fa-solid fa-circle-minus"></i></a></td>
+									
+									<td class="product-name">Nike Air Force 2021</td>
+									<td class="product-price">$35</td>
+									<td class="product-quantity"><input type="number" placeholder="0"></td>
+									<td class="product-total">1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="total-section">
+						<table class="total-table">
+							<thead class="total-table-head">
+								<tr class="table-total-row">
+									<th>Total</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="total-data">
+									<td><strong>Subtotal: </strong></td>
+									<td>$500</td>
+								</tr>
+								<tr class="total-data">
+									<td><strong>Shipping: </strong></td>
+									<td>$45</td>
+								</tr>
+								<tr class="total-data">
+									<td><strong>Total: </strong></td>
+									<td>$545</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="cart-buttons">
+							<a href="cart.html" class="boxed-btn">Cancel Order</a>
+							<a href="checkout.html" class="boxed-btn black">Proceed</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end cart -->
+
+
+
+
+    <!-- footer area starts -->
+
+    <div class="footer-area" id="footer">
+        <div class="container-fluid footer_container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-box about-widget">
+                        <h2 class="widget-title">About us</h2>
+                        <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-box get-in-touch">
+                        <h2 class="widget-title">Get in Touch</h2>
+                        <ul>
+                            <li>Lake Side, Nepal, 33700</li>
+                            <li>support@footjunkies.com</li>
+                            <li>+977-9827123456</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-box pages">
+                        <h2 class="widget-title">Pages</h2>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="services.html">Shop</a></li>
+                            <li><a href="news.html">News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-box subscribe">
+                        <h2 class="widget-title">Subscribe</h2>
+                        <p>Subscribe to our mailing list to get the latest updates.</p>
+                        <form action="index.html">
+                            <input type="email" placeholder="Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section ends -->
+
+
+    <script src="../assets/bs-assets/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/11c8559464.js" crossorigin="anonymous"></script>
+    <script src="../assets/bs-assets/js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/jq-assets/jQuery3.6.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

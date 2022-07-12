@@ -8,39 +8,44 @@
     <title>Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Exo:wght@800&family=Kanit&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Exo:wght@800&family=Kanit&family=Poppins:wght@200;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../assets/bs-assets/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./form.html">
 </head>
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid" id="home">
+
+            <!-- top logo section starts  -->
+        <div class="row top_row">
             <div class="col-1 py-1">
-                <img class="website_logo" src="../assets/Images/ols-logo1.png" alt="Website Logo">
+                <img class="website_logo" src="../assets/Images/ols-logo2.png" alt="Website Logo">
             </div>
             <div class="col-10">
                 <h3 class="main_title mt-3">FOOT-JUNKIES</h3>
             </div>
             <div class="col-1 d-inline-flex">
-                <div class="user_icon py-3 mt-2">
+                <div class="user_icon py-3 mt-2 d-inline-flex">
+                    <i class="fa-solid fa-bell"></i>
                     <i class="fa-solid fa-user"></i>
                 </div>
             </div>
         </div>
+        <!-- top logo section ends  -->
 
+
+        <!-- navbar section starts -->
         <div class="row row-2">
             <nav class="navbar navbar-expand-lg">
                 <div class="input-group">
                     <input type="search" class="form-control rounded" placeholder="Search Here.." aria-label="Search" />
                     <button type="button" class="btn">
-                        <i class="fa-solid fa-search"></i>
+                        <i class="fa-solid fa-search search_icon"></i>
                     </button>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#collapsibleNavbar">
@@ -50,27 +55,27 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item active_item">
-                            <a href="#" class="nav-link active_link">
+                            <a href="#home" class="nav-link active_link">
                                 <i class="fa-solid fa-house"></i>
                                 HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#dummy-trending" class="nav-link">
                                 <i class="fa-solid fa-layer-group"></i>
-                                CATEGORIES</a>
+                                TRENDING</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#dummy-brands" class="nav-link">
                                 <i class="fa-solid fa-star"></i>
                                 BRANDS</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#dummy-accessories" class="nav-link">
                                 <i class="fa-solid fa-gifts"></i>
                                 ACCESSORIES</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#dummy-about" class="nav-link">
                                 <i class="fa-solid fa-circle-info"></i>
                                 ABOUT</a>
                         </li>
@@ -106,25 +111,46 @@
                 </div>
             </nav>
         </div>
+        <!-- navbar section ends -->
 
 
-
-        <!-- SLIDER SECTION -->
-        
-        <!-- <div class="container-fluid slider_container">
-
-        </div> -->
+        <!-- slider section starts -->
 
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100 slider_image_1" src="../assets/Images/cyber-5244032.png" alt="First slide">
+                    <img class="d-block slider_image_1" src="../assets/Images/Air Jordan Shoes Wallpapers.jpg"
+                        alt="First slide">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>AIR JORDAN</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="./product.html">
+                            <button type="button" class="btn btn-link">Explore</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100 slider_image_2" src="../assets/Images/black-friday-5770278_1920.png" alt="Second slide">
+                    <img class="d-block slider_image_2"
+                        src="../assets/Images/Nike Football Shoes Hd Wallpaper   Style Guru Fashion Glitz.jpg"
+                        alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>NIKE MERCURIAL</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="./product.html">
+                            <button type="button" class="btn btn-link">Explore</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100 slider_image_3" src="../assets/Images/halloween-4576779.png" alt="Third slide">
+                    <img class="d-block slider_image_3" src="../assets/Images/Air Jordan Shoes Wallpapers.jpg"
+                        alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>STEPHEN CURRY SHOES</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="./product.html">
+                            <button type="button" class="btn btn-link">Explore</button>
+                        </a>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -137,14 +163,15 @@
             </a>
         </div>
 
+        <!-- slider section ends -->
 
 
 
 
-        <!-- GENDER CATEGORY -->
+        <!-- GENDER CATEGORY starts -->
 
-        <div class="row gender_row">
-            <div class="gender_class">
+        <div class="row gender_row d-lg-none pt-3">
+            <div class="gender_class m-3">
                 <div class="col-12 col_men">
                     <a href="#" class="a_men">
                         <i class="fa-solid fa-person"></i>
@@ -166,17 +193,482 @@
             </div>
         </div>
 
-    </div>
+        <!-- gender category ends -->
+
+
+        <!-- feature list section starts -->
+
+        <div class="container-fluid feature_container text-center px-0">
+            <div class="row feature_list_row">
+                <div class="col-12 col-md-4 feature_list_col1">
+                    <i class="fa-solid fa-dolly"></i>
+                    <h5>Shipping Worldwide</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-12 col-md-4 feature_list_col2">
+                    <i class="fa-solid fa-rotate"></i>
+                    <h5>Timely Refund</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-12 col-md-4 feature_list_col3">
+                    <i class="fas fa-phone-volume"></i>
+                    <h5>24/7 Support</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- feature section ends -->
+
+
+        <div class="dummy-dot" id="dummy-trending">
+            <h1 style="color: #000000;">.</h1>
+        </div>
+
+
+
+        <!-- product section starts -->
+
+        <div class="product-section" id="trending">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <div class="section-title">
+                            <h3><span class="orange-text">TOP</span> SELLERS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque
+                                eveniet beatae optio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="single-product-item">
+                            <div class="product-image">
+                                <a href="#"><img src="../assets/Images/top_seller_2.jpg" alt=""></a>
+                            </div>
+                            <h3>Clarks Women Sandals</h3>
+                            <p class="product-price"><span>ITEM PRICE</span> $85 </p>
+                            <a href="./cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="single-product-item">
+                            <div class="product-image">
+                                <a href="#"><img src="../assets/Images/top_seller_3.jpg" alt=""></a>
+                            </div>
+                            <h3>Puma RS-X 2022</h3>
+                            <p class="product-price"><span>ITEM PRICE</span> $70 </p>
+                            <a href="./cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
+                        <div class="single-product-item">
+                            <div class="product-image">
+                                <a href="#"><img src="../assets/Images/top_seller_6.jpg" alt=""></a>
+                            </div>
+                            <h3>Nike Air Force 2021</h3>
+                            <p class="product-price"><span>ITEM PRICE</span> $35 </p>
+                            <a href="./cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end product section -->
+
+        <div class="dummy-dot" id="dummy-brands">
+            <h1 style="color: #000000;">.</h1>
+        </div>
+
+        <!-- brands section starts -->
+
+        <div class="brands-section" id="brands">
+            <div class="container-fluid ">
+                <div class="row brands-title">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <div class="section-title">
+                            <h3><span class="orange-text">BRANDS</span> WE WORK WITH</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque
+                                eveniet beatae optio.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row brand-row">
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/Adidas-Logo.wine.svg" style="color: #eaeaea;" alt="Brand Name 1">
+                        </div>
+                        <a href="#">
+                            <h3>Adidas</h3>
+                        </a>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/Nike,_Inc.-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <a href="#">
+                            <h3>Nike</h3>
+                        </a>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/Asics-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <a href="#">
+                            <h3>Asics</h3>
+                        </a>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/Bally_Shoe-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <a href="#">
+                            <h3>Bally Shoe</h3>
+                        </a>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/Burberry-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <a href="#">
+                            <h3>Burberry</h3>
+                        </a>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/Converse_(shoe_company)-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <a href="#">
+                            <h3>Converse</h3>
+                        </a>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/Fila_(company)-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <a href="#">
+                            <h3>Fila</h3>
+                        </a>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/New_Balance-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <a href="#">
+                            <h3>New Balance</h3>
+                        </a>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/Puma_(brand)-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <a href="#">
+                            <h3>Puma</h3>
+                        </a>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/Reebok-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <h3>Reebok</h3>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/Gucci-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <h3>Gucci</h3>
+                    </div>
+                    <div class="brand-col col-lg-2 text-center my-5">
+                        <div class="brand-avater">
+                            <img src="../assets/Images/H&M-Logo.wine.svg" alt="Brand Name 1">
+                        </div>
+                        <h3>H&M</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- brands section ends -->
+
+
+        <div class="dummy-dot" id="dummy-accessories">
+            <h1 style="color: #000000;">.</h1>
+        </div>
+
+        <!-- accessories section starts -->
+
+        <div class="product-section" id="accessories">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <div class="section-title">
+                            <h3><span class="orange-text">ACCESSORIES</span> by FootJunkie</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque
+                                eveniet beatae optio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="single-product-item">
+                            <div class="product-image">
+                                <a href="#"><img src="../assets/Images/shoe cleaner.jpg" alt=""></a>
+                            </div>
+                            <h3>Shoe Cleaners</h3>
+                            <p class="product-price"><span>COMING SOON</span> </p>
+                            <a href="./errorpage.html" class="cart-btn">Learn More
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="single-product-item">
+                            <div class="product-image">
+                                <a href="#"><img src="../assets/Images/shoe cover.jpg" alt=""></a>
+                            </div>
+                            <h3>Shoe Protector</h3>
+                            <p class="product-price"><span>COMING SOON</span></p>
+                            <a href="./errorpage.html" class="cart-btn">Learn More
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
+                        <div class="single-product-item">
+                            <div class="product-image">
+                                <a href="#"><img src="../assets/Images/slippers.jpg" alt=""></a>
+                            </div>
+                            <h3>Slippers</h3>
+                            <p class="product-price"><span>COMING SOON</span></p>
+                            <a href="./errorpage.html" class="cart-btn">Learn More
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- accessories section ends here -->
+
+        <div class="dummy-dot" id="#dummy-team">
+            <h1 style="color: #000000;">.</h1>
+        </div>
+
+
+        <!-- Our Team section -->
+        <div class="team-section" id="team">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <div class="section-title">
+                            <h3><span class="orange-text">MEET</span> OUR TEAM</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque
+                                eveniet beatae optio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bg-light team-row">
+                    <div class="col-lg-4 text-center">
+                        <div class="client-avater">
+                            <img src="../assets/Images/pande.png" alt="">
+                        </div>
+                        <div class="client-meta p-2">
+                            <h3>Suraj Pandey<span>Business Reporter</span></h3>
+                            <p class="testimonial-body">
+                                " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto
+                                beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde
+                                omnis iste natus error sit voluptatem accusantium "
+                            </p>
+                            <div class="last-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-center">
+                        <div class="client-avater">
+                            <img src="../assets/Images/seru.png" alt="">
+                        </div>
+                        <div class="client-meta">
+                            <h3>Nabin Chhetri<span>Marketing Head</span></h3>
+                            <p class="testimonial-body">
+                                " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto
+                                beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde
+                                omnis iste natus error sit voluptatem accusantium "
+                            </p>
+                            <div class="last-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-center">
+                        <div class="client-avater">
+                            <img src="../assets/Images/sandy.jpeg" alt="">
+                        </div>
+                        <div class="client-meta">
+                            <h3>Sandesh Giri<span>Product Manager</span></h3>
+                            <p class="testimonial-body">
+                                " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto
+                                beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde
+                                omnis iste natus error sit voluptatem accusantium "
+                            </p>
+                            <div class="last-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End of Our Team section -->
+
+        <div class="dummy-dot" id="dummy-about">
+            <h1 style="color: #000000;">.</h1>
+        </div>
+
+        <!-- footer area starts -->
+
+        <div class="footer-area" id="footer">
+            <div class="container-fluid footer_container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-box about-widget">
+                            <h2 class="widget-title">About us</h2>
+                            <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-box get-in-touch">
+                            <h2 class="widget-title">Get in Touch</h2>
+                            <ul>
+                                <li>Lake Side, Nepal, 33700</li>
+                                <li>support@footjunkies.com</li>
+                                <li>+977-9827123456</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-box pages">
+                            <h2 class="widget-title">Pages</h2>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="services.html">Shop</a></li>
+                                <li><a href="news.html">News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-box subscribe">
+                            <h2 class="widget-title">Subscribe</h2>
+                            <p>Subscribe to our mailing list to get the latest updates.</p>
+                            <form action="index.html">
+                                <input type="email" placeholder="Email">
+                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer section ends -->
+
+
+        <!-- login form starts -->
+
+        <form class="login-form">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="login-image">
+                <img src="../assets/Images/ols-logo1.png" alt="login-icon" />
+            </div>
+            <h3><span class="orange-text">LOG </span>IN</h3>
+            <div class="form-group text-center">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter your e-mail">
+            </div>
+            <div class="form-group text-center">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter your Password">
+            </div>
+            <div class="form-group form-check text-center">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-primary login-btn w-100">Submit</button>
+
+            <a href="#" class="login-to-register">New Here? Create an Account</a>
+        </form>
+
+        <!-- login form ends -->
+
+
+
+        <!-- signup form starts -->
+
+        <form class="signup-form">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="signup-image">
+                <img src="../assets/Images/ols-logo1.png" alt="login-icon" />
+            </div>
+            <h3><span class="orange-text">SIGN </span>UP</h3>
+            <div class="form-group text-center">
+                <label for="exampleInputName">Name</label>
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="NameHelp"
+                    placeholder="Enter your Name">
+            </div>
+            <div class="form-group text-center">
+                <label for="exampleInputEmail2">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"
+                    placeholder="Enter your e-mail">
+            </div>
+            <div class="form-group text-center">
+                <label for="exampleInputPassword2">Create Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2"
+                    placeholder="Enter your Password">
+            </div>
+            <div class="form-group form-check text-center">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Agree Terms & Conditions</label>
+            </div>
+            <button type="submit" class="btn btn-primary signup-btn w-100">Sign Up</button>
+
+            <a href="#" class="already-have-account">Already have an account? Login Here</a>
+        </form>
+
+        <!-- login form ends -->
+
+
+
+        
 
 
 
 
-    <script src="../assets/bs-assets/js/bootstrap.js"></script>
-    <script src="https://kit.fontawesome.com/11c8559464.js" crossorigin="anonymous"></script>
-    <script src="../assets/bs-assets/js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        <script src="../assets/bs-assets/js/bootstrap.js"></script>
+        <script src="https://kit.fontawesome.com/11c8559464.js" crossorigin="anonymous"></script>
+        <script src="../assets/bs-assets/js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../assets/jq-assets/jQuery3.6.js"></script>
+        <script src="./main.js"></script>
+
 
 </body>
 

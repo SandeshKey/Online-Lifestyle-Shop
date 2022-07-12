@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Exo:wght@800&family=Kanit&family=Poppins:wght@200;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bs-assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+
+    <style>
+
+        body{
+            background: url(../assets/Images/white-abstract.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        form{
+            position: absolute;
+            background-color: rgba(0, 0, 0, .6);
+            padding: 5% 15%;
+            margin: 3%;
+            border-radius: 3px;
+        }
+
+        form h3{
+            text-align: center;
+            font-family: Changa;
+            color: #eaeaea;
+        }
+
+        .orange-text{
+            color: #F28123;
+        }
+
+        .login-image img {
+            width: 20%;
+            margin-left: 40%;
+            margin-bottom: 6%;
+            margin-top: -3%;
+        }
+
+        .form-group label{
+            color: #f28123;
+            font-family: Poppins;
+            margin-bottom: 0px;
+        }
+
+        label.form-check-label{
+            font-size: 14px;
+        }
+
+        .form-control::placeholder{
+            font-family: Poppins;
+            opacity: .4;
+            font-size: 12px;
+        }
+
+        .login-btn{
+            background-color: #F28123;
+            margin-bottom: 6%;
+        }
+
+        form a{
+            color: #eaeaea;
+            font-family: Poppins;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        form a:hover{
+            color: #eaeaea;
+            text-decoration: underline;
+        }
+
+        .cross-btn{
+            color: #eaeaea;
+            text-align: right;
+            font-family: Changa;
+            font-size: 28px;
+            cursor: pointer;
+        }
+        
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <form>
+        <!-- <p class="cross-btn">X</p> -->
+        <div class="login-image">
+            <img src="../assets/Images/ols-logo1.png" alt="login-icon" />
+        </div>
+        <h3><span class="orange-text">LOG </span>IN</h3>
+        <div class="form-group text-center">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter your e-mail">
+        </div>
+        <div class="form-group text-center">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+        </div>
+        <div class="form-group form-check text-center">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+        </div>
+        <button type="submit" class="btn btn-primary login-btn w-100">Submit</button>
+
+        <a href="#">New Here? Create an Account</a>
+    </form>
+
+
+
+
+
+
+
+    <script src="../assets/bs-assets/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/11c8559464.js" crossorigin="anonymous"></script>
+    <script src="../assets/bs-assets/js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
