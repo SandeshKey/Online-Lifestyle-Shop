@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background: #000000;
+    font-family: Poppins;
 }
 
 .row {
@@ -58,11 +59,11 @@ li.nav-item a {
     cursor: pointer;
 }
 
-.fa-bell {
+/* .fa-bell {
     color: #EAEAEA;
     font-size: 18px;
     display: none;
-}
+} */
 
 .fa-user {
     color: #EAEAEA;
@@ -72,7 +73,7 @@ li.nav-item a {
 
 
 .fa-user:hover,
-.fa-bell:hover {
+.fa-basket-shopping:hover {
     color: #F28123;
     transition: .7s;
     box-shadow: 1px 1px 12px #EAEAEA;
@@ -526,6 +527,18 @@ h2.widget-title:after {
     margin-bottom: 55px;
 }
 
+.dashboard_col{
+    text-align: center;
+    font-family: Poppins;
+}
+
+.dashboard_col h5{
+    margin: 25px 0;
+    padding: 15px 0;
+    background-color: #222831;
+    color: #EAEAEA;
+}
+
 
 
 
@@ -589,7 +602,8 @@ h2.widget-title:after {
         margin-left: 15px;
     }
 
-    .fa-bell {
+    .fa-basket-shopping {
+        color: #EAEAEA;
         display: block;
         cursor: pointer;
         margin-right: 25px;
